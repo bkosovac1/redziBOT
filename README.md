@@ -3,9 +3,9 @@
 This project is part of the Data Science and AI Course at Faculty of Electrical Engineering Sarajevo. We utilize the YOLO (You Only Look Once) object detection model to detect pedestrians and vehicles in driving scenarios, classify traffic lights and track lane, primarily using dashcam footage and images. Different configurations and sizes of the YOLO model were explored to evaluate performance.<br>
 
 **Team Members:**
-* [Emin Hadziabdic] - ([GitHub Profile](https://github.com/ehadziabdic))
-* [Armin Memisevic] - ([GitHub Profile](https://github.com/arminn2206))
-* [Muhamed Pasic] - ([GitHub Profile](https://github.com/))
+* [Emin Hadžiabdić] - ([GitHub Profile](https://github.com/ehadziabdic))
+* [Armin Memišević] - ([GitHub Profile](https://github.com/arminn2206))
+* [Muhamed Pašić] - ([GitHub Profile](https://github.com/MuhaxD))
 * [Bakir Kosovac] - ([GitHub Profile](https://github.com/bkosovac1))
 
 
@@ -26,60 +26,141 @@ Training was done on nano and large size of YOLOv11 model. The training process 
 Following are the training parameters and results of all models. 
 Training was conducted using various sizes of the YOLOv11 model (`nano` and `large`). Key training parameters and validation results are summarized below:
 
-| **Run ID** | **YOLO Size** | **Epochs** | **Batch Size** | **Learning Rate** | **Optimizer** | **Workers** | **Momentum** | **Precision (P)** | **Recall (R)** |
-|:----------:|:-------------:|:----------:|:--------------:|:-----------------:|:-------------:|:-----------:|:------------:|:-----------------:|:--------------:|
-|      1     |    `large`    |    `50`    |      `16`      |      `0.01429`    |    `AdamW`    |     `8`     |    `0.9`     |      `[Num]%`     |     `[Num]%`   | 
-|      2     |    `nano`     |    `100`   |      `16`      |      `0.00000`    |    `AdamW`    |     `0`     |    `0.0`     |      `[Num]%`     |     `[Num]%`   |
-|      3     |    `large`    |    `50`    |      `16`      |      `0.00000`    |    `AdamW`    |     `0`     |    `0.0`     |      `[Num]%`     |     `[Num]%`   |
-|      3     |    `nano`     |    `100`   |      `16`      |      `0.00000`    |    `AdamW`    |     `0`     |    `0.0`     |      `[Num]%`     |     `[Num]%`   |
+| **ID** | **YOLO Size** | **Epochs** | **Batch Size** | **Learning Rate** |  **Optimizer**  | **Momentum** |  **Dropout**  | **Precision (P)** | **Recall (R)** | **mAP50** | **mAP50-95** |
+|:------:|:-------------:|:----------:|:--------------:|:-----------------:|:---------------:|:------------:|:-------------:|:-----------------:|:--------------:|:---------:|:------------:|
+|    1   |    `large`    |    `50`    |      `16`      |     `0.001429`    |  `Auto: AdamW`  |     `0.9`    |     `0.0`     |      `81.4%`      |     `87.4%`    |  `91.0%`  |    `47.9%`   | 
+|    2   |    `nano`     |    `100`   |      `64`      |     `0.001429`    |  `Auto: AdamW`  |     `0.9`    |     `0.0`     |      `91.1%`      |     `89.2%`    |  `94.1%`  |    `50.1%`   | 
+|    3   |    `large`    |    `50`    |      `16`      |     `0.001667`    |  `Auto: AdamW`  |     `0.9`    |     `0.0`     |      `83.2%`      |     `86.4%`    |  `85.8%`  |    `77.2%`   | 
+|    4   |    `nano`     |    `100`   |      `64`      |     `0.001667`    |  `Auto: AdamW`  |     `0.9`    |     `0.0`     |      `82.9%`      |     `88.9%`    |  `86.8%`  |    `78.7%`   |
 
 ## Results
 Below are some key performance indicators and visualizations from our training runs.
 
-### 1. Traffic Light Detection with Large YOLOv11 model (Run ID 1)
+### 1. Traffic Lights Detection with Large YOLOv11 model (ID 1)
+
+* **Precision-Confidence Curve:**
+
+    <img src="./data/analytics/yolo_large_trafficlights/P_curve.png" alt="P Curve ID1" width="720"/>
+
+* **Recall-Confidence Curve:**
+
+    <img src="./data/analytics/yolo_large_trafficlights/R_curve.png" alt="R Curve ID1" width="720"/>
 
 * **Precision-Recall Curve:**
-    ![PR Curve]([Link to your PR Curve Image])
+
+    <img src="./data/analytics/yolo_large_trafficlights/PR_curve.png" alt="PR Curve ID1" width="720"/>
 
 * **Confusion Matrix:**
-    ![Confusion Matrix]([Link to your Confusion Matrix Image])
+
+    <img src="./data/analytics/yolo_large_trafficlights/confusion_matrix_normalized.png" alt="Confusion Matrix ID1" width="720"/>
+
+* **Results:**
+
+    <img src="./data/analytics/yolo_large_trafficlights/results.png" alt="Results ID1" width="720"/>
 
 * **Example Detections:**
-    ![Example Detection 1]([Link to an Example Detection Image/Video Frame])
-    ![Example Detection 2]([Link to another Example Detection Image/Video Frame])
 
-### 2. Traffic Light Detection with Nano YOLOv11 model (Run ID 2)
+    - Model Labels
+
+    <img src="./data/analytics/yolo_large_trafficlights/val_batch1_labels.jpg" alt="Batch Labels ID1" width="720"/>
+
+    - Model Prediction
+
+    <img src="./data/analytics/yolo_large_trafficlights/val_batch1_pred.jpg" alt="Batch Prediction ID1" width="720"/>
+
+### 2. Traffic Lights Detection with Nano YOLOv11 model (ID 2)
+
+* **Precision-Confidence Curve:**
+
+    <img src="./data/analytics/yolo_nano_trafficlights/P_curve.png" alt="P Curve ID2" width="720"/>
+
+* **Recall-Confidence Curve:**
+
+    <img src="./data/analytics/yolo_nano_trafficlights/R_curve.png" alt="R Curve ID2" width="720"/>
 
 * **Precision-Recall Curve:**
-    ![PR Curve]([Link to your PR Curve Image])
+
+    <img src="./data/analytics/yolo_nano_trafficlights/PR_curve.png" alt="PR Curve ID2" width="720"/>
 
 * **Confusion Matrix:**
-    ![Confusion Matrix]([Link to your Confusion Matrix Image])
+
+    <img src="./data/analytics/yolo_nano_trafficlights/confusion_matrix_normalized.png" alt="Confusion Matrix ID2" width="720"/>
+
+* **Results:**
+
+    <img src="./data/analytics/yolo_nano_trafficlights/results.png" alt="Results ID2" width="720"/>
 
 * **Example Detections:**
-    ![Example Detection 1]([Link to an Example Detection Image/Video Frame])
-    ![Example Detection 2]([Link to another Example Detection Image/Video Frame])
 
-### 3. Lane Segmentation with Large YOLOv11 model (Run ID 3)
+    - Model Labels
+
+    <img src="./data/analytics/yolo_nano_trafficlights/val_batch1_labels.jpg" alt="Batch Labels ID2" width="720"/>
+
+    - Model Prediction
+
+    <img src="./data/analytics/yolo_nano_trafficlights/val_batch1_pred.jpg" alt="Batch Prediction ID2" width="720"/>
+
+### 3. Lane Segmentation with Large YOLOv11 model (ID 3)
+
+* **Precision-Confidence Curve:**
+
+    <img src="./data/analytics/yolo_large_lane/BoxP_curve.png" alt="P Curve ID3" width="720"/>
+
+* **Recall-Confidence Curve:**
+
+    <img src="./data/analytics/yolo_large_lane/BoxR_curve.png" alt="R Curve ID3" width="720"/>
+
 
 * **Precision-Recall Curve:**
-    ![PR Curve]([Link to your PR Curve Image])
+
+    <img src="./data/analytics/yolo_large_lane/BoxPR_curve.png" alt="PR Curve ID3" width="720"/>
 
 * **Confusion Matrix:**
-    ![Confusion Matrix]([Link to your Confusion Matrix Image])
+
+    <img src="./data/analytics/yolo_large_lane/confusion_matrix.png" alt="Confusion Matrix ID3" width="720"/>
+
+* **Results:**
+
+    <img src="./data/analytics/yolo_large_lane/results.png" alt="Results ID3" width="720"/>
 
 * **Example Detections:**
-    ![Example Detection 1]([Link to an Example Detection Image/Video Frame])
-    ![Example Detection 2]([Link to another Example Detection Image/Video Frame])
 
-### 4. Lane Segmentation with Nano YOLOv11 model (Run ID 4)
+    - Model Labels
+
+    <img src="./data/analytics/yolo_large_lane/val_batch1_labels.jpg" alt="Batch Labels ID3" width="720"/>
+
+    - Model Prediction
+
+    <img src="./data/analytics/yolo_large_lane/val_batch1_pred.jpg" alt="Batch Prediction ID3" width="720"/>
+
+### 4. Lane Segmentation with Nano YOLOv11 model (ID 4)
+
+* **Precision-Confidence Curve:**
+
+    <img src="./data/analytics/yolo_nano_lane/BoxP_curve.png" alt="P Curve ID4" width="720"/>
+
+* **Recall-Confidence Curve:**
+
+    <img src="./data/analytics/yolo_nano_lane/BoxR_curve.png" alt="R Curve ID4" width="720"/>
 
 * **Precision-Recall Curve:**
-    ![PR Curve]([Link to your PR Curve Image])
+
+    <img src="./data/analytics/yolo_nano_lane/BoxPR_curve.png" alt="PR Curve ID4" width="720"/>
 
 * **Confusion Matrix:**
-    ![Confusion Matrix]([Link to your Confusion Matrix Image])
+
+    <img src="./data/analytics/yolo_nano_lane/confusion_matrix.png" alt="Confusion Matrix ID4" width="720"/>
+
+* **Results:**
+
+    <img src="./data/analytics/yolo_nano_lane/results.png" alt="Results ID4" width="720"/>
 
 * **Example Detections:**
-    ![Example Detection 1]([Link to an Example Detection Image/Video Frame])
-    ![Example Detection 2]([Link to another Example Detection Image/Video Frame])
+
+    - Model Labels
+
+    <img src="./data/analytics/yolo_nano_lane/val_batch1_labels.jpg" alt="Batch Labels ID4" width="720"/>
+
+    - Model Prediction
+    
+    <img src="./data/analytics/yolo_nano_lane/val_batch1_pred.jpg" alt="Batch Prediction ID4" width="720"/>

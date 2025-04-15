@@ -1,0 +1,6 @@
+train: C:\Users\eminh\Desktop\redziBOT\data\datasets\TrafficLightDetection\train
+val: C:\Users\eminh\Desktop\redziBOT\data\datasets\TrafficLightDetection\valid
+test: C:\Users\eminh\Desktop\redziBOT\data\datasets\TrafficLightDetection\test
+
+nc: 3
+names: ['green-lights', 'red-lights', 'yellow-lights']
