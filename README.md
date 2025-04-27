@@ -26,12 +26,12 @@ Training was done on nano and large size of YOLOv11 model. The training process 
 Following are the training parameters and results of all models. 
 Training was conducted using various sizes of the YOLOv11 model (`nano` and `large`). Key training parameters and validation results are summarized below:
 
-| **ID** | **YOLO Size** | **Epochs** | **Batch Size** | **Learning Rate** |  **Optimizer**  | **Momentum** |  **Dropout**  | **Precision (P)** | **Recall (R)** | **mAP50** | **mAP50-95** |
-|:------:|:-------------:|:----------:|:--------------:|:-----------------:|:---------------:|:------------:|:-------------:|:-----------------:|:--------------:|:---------:|:------------:|
-|    1   |    `large`    |    `50`    |      `16`      |     `0.001429`    |  `Auto: AdamW`  |     `0.9`    |     `0.0`     |      `81.4%`      |     `87.4%`    |  `91.0%`  |    `47.9%`   | 
-|    2   |    `nano`     |    `100`   |      `64`      |     `0.001429`    |  `Auto: AdamW`  |     `0.9`    |     `0.0`     |      `91.1%`      |     `89.2%`    |  `94.1%`  |    `50.1%`   | 
-|    3   |    `large`    |    `50`    |      `16`      |     `0.001667`    |  `Auto: AdamW`  |     `0.9`    |     `0.0`     |      `83.2%`      |     `86.4%`    |  `85.8%`  |    `77.2%`   | 
-|    4   |    `nano`     |    `100`   |      `64`      |     `0.001667`    |  `Auto: AdamW`  |     `0.9`    |     `0.0`     |      `82.9%`      |     `88.9%`    |  `86.8%`  |    `78.7%`   |
+|         **Model**        | **YOLO Size** | **Epochs** | **Batch Size** | **Learning Rate** |  **Optimizer**  | **Momentum** |  **Dropout**  | **Precision (P)** | **Recall (R)** | **mAP50** | **mAP50-95** |
+|:------------------------:|:-------------:|:----------:|:--------------:|:-----------------:|:---------------:|:------------:|:-------------:|:-----------------:|:--------------:|:---------:|:------------:|
+| Traffic Lights Detection |    `large`    |    `50`    |      `16`      |     `0.001429`    |  `Auto: AdamW`  |     `0.9`    |     `0.0`     |      `81.4%`      |     `87.4%`    |  `91.0%`  |    `47.9%`   | 
+| Traffic Lights Detection |    `nano`     |    `100`   |      `64`      |     `0.001429`    |  `Auto: AdamW`  |     `0.9`    |     `0.0`     |      `91.1%`      |     `89.2%`    |  `94.1%`  |    `50.1%`   | 
+|     Lane Segmentation    |    `large`    |    `50`    |      `16`      |     `0.001667`    |  `Auto: AdamW`  |     `0.9`    |     `0.0`     |      `83.2%`      |     `86.4%`    |  `85.8%`  |    `77.2%`   | 
+|     Lane Segmentation    |    `nano`     |    `100`   |      `64`      |     `0.001667`    |  `Auto: AdamW`  |     `0.9`    |     `0.0`     |      `82.9%`      |     `88.9%`    |  `86.8%`  |    `78.7%`   |
 
 ## Results
 Below are some key performance indicators and visualizations from our training runs.
