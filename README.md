@@ -56,8 +56,8 @@ Training was conducted using various sizes of the YOLOv11 model (`nano` and `lar
 
 |      **Model**       | **YOLO Size** | **Epochs** | **Batch Size** | **Learning Rate** |  **Optimizer**  | **Momentum** |  **Dropout**  | **Precision (P)** | **Recall (R)** | **mAP50** | **mAP50-95** |
 |:--------------------:|:-------------:|:----------:|:--------------:|:-----------------:|:---------------:|:------------:|:-------------:|:-----------------:|:--------------:|:---------:|:------------:|
-|   Detection Model    |    `large`    |    `50`    |      `16`      |     `0.001429`    |  `Auto: AdamW`  |     `0.9`    |     `0.0`     |      `xx.x%`      |     `xx.x%`    |  `xx.x%`  |    `xx.x%`   | 
-|   Detection Model    |    `nano`     |    `100`   |      `64`      |     `0.001429`    |  `Auto: AdamW`  |     `0.9`    |     `0.0`     |      `81.1%`      |     `81.1%`    |  `81.1%`  |    `81.1%`   | 
+|   Detection Model    |    `large`    |    `10`    |      `16`      |     `0.001429`    |  `Auto: AdamW`  |     `0.9`    |     `0.0`     |      `81.1%`      |     `68.4%`    |  `75.5%`  |    `44.2%`   | 
+|   Detection Model    |    `nano`     |    `25`    |      `32`      |     `0.001429`    |  `Auto: AdamW`  |     `0.9`    |     `0.0`     |      `81.1%`      |     `65.6%`    |  `72.9%`  |    `41.9%`   | 
 |  Segmentation Model  |    `large`    |    `50`    |      `16`      |     `0.001667`    |  `Auto: AdamW`  |     `0.9`    |     `0.0`     |      `83.2%`      |     `86.4%`    |  `85.8%`  |    `77.2%`   | 
 |  Segmentation Model  |    `nano`     |    `100`   |      `64`      |     `0.001667`    |  `Auto: AdamW`  |     `0.9`    |     `0.0`     |      `82.9%`      |     `88.9%`    |  `86.8%`  |    `78.7%`   |
 
