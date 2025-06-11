@@ -160,7 +160,8 @@ Below are some key performance indicators and visualizations from our training r
     <img src=".\data\analytics\segmentation_nano\results.png" alt="Results ID4" width="720"/>
 
 ## Project: AutoDrive Poster Presentation
-![AutoDrive Poster](data\autodrive_poster.png)
+**Poster Presentation**
+    <img src=".\data\autodrive_poster.png" alt="Poster Presentation"/>
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
