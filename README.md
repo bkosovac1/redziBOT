@@ -14,6 +14,7 @@ This project is part of the Data Science and AI Course at Faculty of Electrical 
   - [2. Detection - Nano YOLOv11 model](#2-detection-with-nano-yolov11-model)
   - [3. Segmentation - Large YOLOv11 model](#3-segmentation-with-large-yolov11-model)
   - [4. Segmentation - Nano YOLOv11 model](#4-segmentation-with-nano-yolov11-model)
+- [Poster Presentation](#project-autodrive-poster-presentation)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -157,6 +158,9 @@ Below are some key performance indicators and visualizations from our training r
 * **Results:**
 
     <img src=".\data\analytics\segmentation_nano\results.png" alt="Results ID4" width="720"/>
+
+## Project: AutoDrive Poster Presentation
+![AutoDrive Poster](data\autodrive_poster.png)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
