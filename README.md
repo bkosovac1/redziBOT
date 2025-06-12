@@ -23,7 +23,7 @@ This project is part of the Data Science and AI Course at Faculty of Electrical 
 **Team Members:**
 * [Emin Hadžiabdić] - ([GitHub Profile](https://github.com/ehadziabdic))
 * [Armin Memišević] - ([GitHub Profile](https://github.com/arminn2206))
-* [Muhamed Pašić] - ([GitHub Profile](https://github.com/MuhaxD))
+* [Muhammed Pašić] - ([GitHub Profile](https://github.com/MuhaxD))
 * [Bakir Kosovac] - ([GitHub Profile](https://github.com/bkosovac1))
 <br><br>
 
@@ -69,93 +69,44 @@ Below are some key performance indicators and visualizations from our training r
 
 ### 1. Detection with Large YOLOv11 model
 
-* **Precision-Confidence Curve:**
+* **Analytics:**
 
-    <img src=".\data\analytics\detection_large\P_curve.png" alt="P Curve ID1" width="720"/>
+    <img src=".\data\analytics\model_analytics\model1.png" alt="Model ID1" width="720"/>
 
-* **Recall-Confidence Curve:**
-
-    <img src=".\data\analytics\detection_large\R_curve.png" alt="R Curve ID1" width="720"/>
-
-* **Precision-Recall Curve:**
-
-    <img src=".\data\analytics\detection_large\PR_curve.png" alt="PR Curve ID1" width="720"/>
-
-* **Confusion Matrix:**
-
-    <img src=".\data\analytics\detection_large\confusion_matrix_normalized.png" alt="Confusion Matrix ID1" width="720"/>
-
-* **Results:**
+* **Train Results:**
 
     <img src=".\data\analytics\detection_large\results.png" alt="Results ID1" width="720"/>
 
 
 ### 2. Detection with Nano YOLOv11 model
 
-* **Precision-Confidence Curve:**
+* **Analytics:**
 
-    <img src=".\data\analytics\detection_nano\P_curve.png" alt="P Curve ID2" width="720"/>
+    <img src=".\data\analytics\model_analytics\model2.png" alt="Model ID2" width="720"/>
 
-* **Recall-Confidence Curve:**
-
-    <img src=".\data\analytics\detection_nano\R_curve.png" alt="R Curve ID2" width="720"/>
-
-* **Precision-Recall Curve:**
-
-    <img src=".\data\analytics\detection_nano\PR_curve.png" alt="PR Curve ID2" width="720"/>
-
-* **Confusion Matrix:**
-
-    <img src=".\data\analytics\detection_nano\confusion_matrix_normalized.png" alt="Confusion Matrix ID2" width="720"/>
-
-* **Results:**
+* **Train Results:**
 
     <img src=".\data\analytics\detection_nano\results.png" alt="Results ID2" width="720"/>
 
 
 ### 3. Segmentation with Large YOLOv11 model
 
-* **Precision-Confidence Curve:**
+* **Analytics:**
 
-    <img src=".\data\analytics\segmentation_large\BoxP_curve.png" alt="P Curve ID3" width="720"/>
+    <img src=".\data\analytics\model_analytics\model3.png" alt="Model ID3" width="720"/>
 
-* **Recall-Confidence Curve:**
-
-    <img src=".\data\analytics\segmentation_large\BoxR_curve.png" alt="R Curve ID3" width="720"/>
-
-
-* **Precision-Recall Curve:**
-
-    <img src=".\data\analytics\segmentation_large\BoxPR_curve.png" alt="PR Curve ID3" width="720"/>
-
-* **Confusion Matrix:**
-
-    <img src=".\data\analytics\segmentation_large\confusion_matrix_normalized.png" alt="Confusion Matrix ID3" width="720"/>
-
-* **Results:**
+* **Train Results:**
 
     <img src=".\data\analytics\segmentation_large\results.png" alt="Results ID3" width="720"/>
 
 
 ### 4. Segmentation with Nano YOLOv11 model
 
-* **Precision-Confidence Curve:**
+* **Analytics:**
 
-    <img src=".\data\analytics\segmentation_nano\BoxP_curve.png" alt="P Curve ID4" width="720"/>
+    <img src=".\data\analytics\model_analytics\model4.png" alt="Model ID4" width="720"/>
 
-* **Recall-Confidence Curve:**
-
-    <img src=".\data\analytics\segmentation_nano\BoxR_curve.png" alt="R Curve ID4" width="720"/>
-
-* **Precision-Recall Curve:**
-
-    <img src=".\data\analytics\segmentation_nano\BoxPR_curve.png" alt="PR Curve ID4" width="720"/>
-
-* **Confusion Matrix:**
-
-    <img src=".\data\analytics\segmentation_nano\confusion_matrix_normalized.png" alt="Confusion Matrix ID4" width="720"/>
-
-* **Results:**
+* **Train Results:**
 
     <img src=".\data\analytics\segmentation_nano\results.png" alt="Results ID4" width="720"/>
 
