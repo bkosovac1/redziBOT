@@ -115,7 +115,7 @@ Below are some key performance indicators and visualizations from our training r
     <img src=".\data\autodrive_poster.png" alt="Poster Presentation"/>
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+We welcome contributions from the community! If you have suggestions for improvements or new features, please feel free to open an issue to start a discussion. For larger or more impactful changes, we recommend discussing your idea in advance to ensure alignment with the project's goals. Once you're ready, submit a pull request with a clear description of your changes and the reasoning behind them. All contributions, big or small, are appreciated and will be reviewed as promptly as possible.
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
